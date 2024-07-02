@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bjorni New Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1262e6adb3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <h1>BNS</h1>
+    <nav>
+        <ul id="navbar">
+            <li><a href="Bjorni New Style.html#kreu" class="active">Kreu</a></li>
+            <li><a href="Bjorni New Style.html#artikujt">Artikujt</a></li>
+            <li><a href="Bjorni New Style.html#rrethnesh">Rreth nesh</a></li>
+            <li><a href="Bjorni New Style.html#kontakti">Kontakt</a></li>
+            <li id="carticon"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </nav>
+
+    <nav id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </nav>
+</header>
+<section>
+    <div class="carttab" id="cart">
+        <h1>Lista e Produkteve</h1>
+        <div class="listcart">
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Emri</th>
+                        <th>Ngjyra</th>
+                        <th>Masa</th>
+                        <th>Sasia</th>
+                        <th>Hiqe</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+        <div class="butoncart">
+            <button id="checkout">Përfundo Blerjen</button>
+            <button id="closebuton">Mbylle</button>
+        </div>
+    </div>
+</section>
+  
+<script>
+//mobile navbar
+var bar=document.getElementById("bar");
+var close=document.getElementById("close");
+var nav=document.getElementById("navbar");
+if(bar){
+bar.addEventListener('click', function(){
+nav.classList.add('active');
+
+})
+}
+if(close){
+close.addEventListener('click', function(){
+nav.classList.remove('active');
+})
+}
+
+
+var cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+
+function renderCartItems() {
+    var cartTableBody = document.querySelector('#cartTable tbody');
+    cartTableBody.innerHTML = ''; 
+    cart.forEach(function(item,index) {
+        var row = '<tr>' +
+            '<td><img src="' + item.productImage + '"></td>' +
+            '<td>' + item.productName + '</td>' +
+            '<td>' + item.selectedColor + '</td>' +
+            '<td>' + item.selectedSize + '</td>' +
+            '<td>' + item.quantity + '</td>' +
+            '<td><button class="removefromcartbtn" data-index="' + index + '"><i class="fa-solid fa-trash"></i></button></td>' +
+            '</tr>';
+            cartTableBody.innerHTML += row;
+        });
+        cartTableBody.querySelectorAll('.removefromcartbtn').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var index = this.getAttribute('data-index');
+            removeFromCart(index);
+        });
+    });
+        }
+        renderCartItems();
+
+        function removeFromCart(index) {
+    cart.splice(index, 1); 
+    sessionStorage.setItem('cart', JSON.stringify(cart));
+    renderCartItems();
+}
+
+document.getElementById('closebuton').addEventListener('click', function() {
+  window.location.href = 'Bjorni New Style.html';
+});
+
+
+</script>
+</body></html>

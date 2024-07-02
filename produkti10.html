@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bjorni New Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1262e6adb3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<header>
+    <h1>BNS</h1>
+    <nav>
+        <ul id="navbar">
+            <li><a href="Bjorni New Style.html#kreu" class="active">Kreu</a></li>
+            <li><a href="Bjorni New Style.html#artikujt">Artikujt</a></li>
+            <li><a href="Bjorni New Style.html#rrethnesh">Rreth nesh</a></li>
+            <li><a href="Bjorni New Style.html#kontakti">Kontakt</a></li>
+            <li id="carticon"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </nav>
+
+        <nav id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </nav>
+</header>
+<section id="prodetails">
+    <div class="prodimage">
+        <img src="prod10.jpg" width=100% id="mainimg">
+        <div class="smallimggroup">
+            <div class="smallimgitem">
+                <img src="prod101.jpg" width="100%" class="smallimg">
+            </div>
+            <div class="smallimgitem">
+                <img src="prod102.jpg" width="100%" class="smallimg">
+            </div>
+            <div class="smallimgitem">
+                <img src="prod103.jpg" width="100%" class="smallimg">
+            </div>
+            <div class="smallimgitem">
+                <img src="prod104.jpg" width="100%" class="smallimg">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="prodinfo">
+        <h5>SHOP/Kostumi</h5>
+        <h1>Kostum Ceremonial</h1>
+        <h3>Kostumi(xhaketë, jelek, pantallona)</h3>
+        <select id="color1">
+            <option>Zgjidhni ngjyrën:</option>
+            <option>Mustard</option>
+        </select>
+        <select id="size1">
+            <option>Zgjidhni masën:</option>
+            <option>44</option>
+            <option>46</option>
+            <option>48</option>
+            <option>50</option>
+            <option>52</option>
+            <option>54</option>
+        </select>
+        <input type="number" value="1" id="quantity1">
+        <h3>Këmisha</h3>
+        <select id="color2">
+            <option>Zgjidhni ngjyrën:</option>
+            <option>E zezë</option>
+            <option>E bardhë</option>
+
+        </select>
+        <select id="size2">
+            <option>Zgjidhni masën:</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>XXXL</option>
+        </select>
+        <input type="number" value="1" id="quantity2">
+        <button id="addToCartBtn">Vazhdoni me blerjen</button>
+        <h4>Shënim:</h4>
+        <span>Kostumi është një veshje elegante, e përbërë nga kostumi (xhaketa, jeleku dhe pantallonat) të përshtatshme për ngjarje formale dhe festive. Në pjesë të ndara, ju mund të zgjidhni këmishën, aksesoret dhe këpucët sipas preferencave tuaja, ose ta blini si një komplet që përfshin të gjitha elementët për një pamje të përfunduar dhe të përshtatshme.</span>
+
+    </div>
+
+</section>
+
+<section class="container" id="kontakti">
+    <h1>Na Kontaktoni</h1>
+    <div class="kontakti">
+        <p><i class="fa fa-instagram" style="font-size:30px"></i><a href="https://www.instagram.com/_bjorni_new_style_/">_bjorni_new_style_</a></p>
+        <p><i class="fa fa-phone" style="font-size:36px"></i><p>+355676505598</p></p>
+        <p><i class="fa fa-envelope-o" style="font-size:30px"></i><p>bjorninewstyle74@gmail.com</p></p>
+        <p><i class="fa fa-map-marker" style="font-size:36px"></i><p>Rruga Myslym Shyri, Tiranë</p>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.320822678257!2d19.80307407583457!3d41.323636571308086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031aa6bb13daf%3A0xae64f2b63de19375!2sBjorni%20New%20Style!5e0!3m2!1sen!2s!4v1718803382034!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<footer>
+    <p>Copyright © 2024 Bjorni New Style.</p>
+</footer>
+<script>
+    var imgmain=document.getElementById("mainimg");
+var imgsmall=document.getElementsByClassName("smallimg");
+imgsmall[0].onclick=function(){
+imgmain.src=imgsmall[0].src;
+}
+imgsmall[1].onclick=function(){
+imgmain.src=imgsmall[1].src;
+}
+imgsmall[2].onclick=function(){
+imgmain.src=imgsmall[2].src;
+}
+imgsmall[3].onclick=function(){
+imgmain.src=imgsmall[3].src;
+}
+
+//mobile navbar
+var bar=document.getElementById("bar");
+var close=document.getElementById("close");
+var nav=document.getElementById("navbar");
+if(bar){
+bar.addEventListener('click', function(){
+nav.classList.add('active');
+
+})
+}
+if(close){
+close.addEventListener('click', function(){
+nav.classList.remove('active');
+})
+}
+
+//add to cart
+$(document).ready(function() {
+    $('#addToCartBtn').click(function() {
+        var cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+        for (var i = 1; i <= 2; i++) {
+                var productName = $('#prodetails h3').eq(i-1).text(); 
+                var productImage = $('#mainimg').attr('src');
+                var selectedColor = $('#color' + i).val();
+                var selectedSize = $('#size' + i).val();
+                var quantity = $('#quantity' + i).val();
+
+                if (selectedColor === "Zgjidhni ngjyrën:" || selectedSize === "Zgjidhni masën:") {
+                continue;
+            }
+        var cartItem = {
+            productImage: productImage,
+            productName: productName,
+            selectedColor: selectedColor,
+            selectedSize: selectedSize,
+            quantity: quantity
+        };
+
+        
+        cart.push(cartItem);
+    }
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+
+        window.location.href = 'cart.html';
+    });
+});
+
+</script>
+</body></html>
