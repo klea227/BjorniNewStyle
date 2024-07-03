@@ -70,4 +70,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Visit out website: [Bjorni New Style](https://www.bjorninewstyle.com)
 - Email:[bjorninewstyle74@gmail.com](mailto:bjorninewstyle74@gmail.com)
 - Phone: +355676505598
-- Instagram: [_bjorni_new_style](https://www.instagram.com/_bjorni_new_style_)
+- Instagram: [_bjorni_new_style_](https://www.instagram.com/_bjorni_new_style_)
