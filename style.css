@@ -517,6 +517,10 @@ nav li{
 margin-top: 40px;
 }
 
+.title h1{
+  visibility: hidden;
+}
+
 .hero-section{
 height:100%;
 }
