@@ -174,6 +174,8 @@ border-radius: 10px 80px;
 .carttab .butoncart #closebuton{
   cursor: pointer;
   border: none;
+  color: #363434;
+  background: #efecec
 }
 
 .carttab .listcart {
@@ -446,6 +448,7 @@ cursor: pointer;
 
 .prodinfo select{
 background: #efecec;
+color: #363434;
 display: block;
 padding: 5px 10px;
 margin-top:10px;
