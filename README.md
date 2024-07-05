@@ -14,8 +14,7 @@ Welcome to Bjorni New Style! This repository contains the source code for our fa
 - [Contributing](#contributing)
 
 ## Demo
-View the live demo [here](#https://klea227.github.io/BjorniNewStyle/)
-<iframe src="https://klea227.github.io/BjorniNewStyle/" style="width:100%; height:500px;"></iframe>
+View the live demo [here](https://klea227.github.io/BjorniNewStyle/)
 
 ## About
 Bjorni New Style is a renowned fashion boutique located in the heart of Tirana, Albania. Since our establishment in 2010, we have been dedicated to providing unique and stylish apparel for both special events and everyday wear.
