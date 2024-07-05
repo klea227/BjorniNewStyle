@@ -541,6 +541,7 @@ margin-top: 40px;
 }
 .title h1{
   font-size: 20px;
+  text-align: center;
 }
 
 .hero-section{
@@ -563,6 +564,9 @@ font-size: 15px;
 #rrethnesh{
 width:100%;
 padding:10px;
+}
+.about{
+  max-height: 500px;
 }
 
 .about article {
