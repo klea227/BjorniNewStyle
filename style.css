@@ -317,15 +317,6 @@ display: flex;
     border-radius: 20px;
     box-shadow: 0 0 10px #5c5757;
   }
-.title{
-    text-align: center;
-    color: #62929a;
-    margin: 0;
-    font-size: 30px;
-    float: center;
-    flex:1;
-
-}
 
 #rrethnesh{
 padding: 50px;
@@ -333,21 +324,17 @@ display: flex;
 }
  .about article {
      margin:40px;
-     text-align: center;
-     flex:1;
+     text-align:center;
      padding: 30px;
      font-size:20px;
      background-color: #efecec;
-     float: right;
      color:#363434;
      border-radius: 30px;
      box-shadow: 0 0 10px #5c5757;
       }
 
 
- aside {
-         width: 30%;
-         margin-top: 30px;
+ aside { 
          background-color: #363434;
          padding: 10px;
          display: flex;
@@ -355,7 +342,7 @@ display: flex;
          justify-content: space-evenly;
        }
  aside img{
-   max-width: 100%;
+   max-width: 80%;
    display: inline-block;
    margin: 0 auto;
     border-radius: 50%;
