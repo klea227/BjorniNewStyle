@@ -34,7 +34,6 @@ Bjorni New Style is a renowned fashion boutique located in the heart of Tirana, 
 - **JavaScript:** Enhancing interactivity, such as handling the mobile navbar, switching through images, and adding products to the cart.
 - **FontAwesome:** Icons for enhanced visual representation.
 - **Google Maps Embed API:** Displaying the store location on the Contact Us page.
-- **JQuery:** Event handling and DOM manipulation for the mobile header part.
 - **Git:** Commiting changes and pushing changes into the main project repository.
   
 ## Installation
